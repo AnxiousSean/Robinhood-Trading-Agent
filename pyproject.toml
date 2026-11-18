@@ -1,0 +1,16 @@
+[project]
+name = "pm-agent"
+version = "0.1.0"
+description = "Prediction-market trading agent + terminal (Kalshi data; paper / Robinhood-ticket / Kalshi execution)"
+requires-python = ">=3.10"
+dependencies = ["requests", "cryptography", "numpy", "pandas", "textual>=0.80", "rich"]
+
+[project.scripts]
+pm = "pmagent.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["pmagent", "pmagent.strategies"]
