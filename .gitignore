@@ -1,0 +1,9 @@
+data/*.db
+data/*.db-journal
+data/collect.log
+data/series_cache.json
+data/KILL
+*.pem
+__pycache__/
+*.egg-info/
+data/*.log
